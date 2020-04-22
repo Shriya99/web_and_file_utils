@@ -14,7 +14,7 @@ with open('HISTORY.md') as history_file:
 
 setup_args = dict(
     name='web_and_file_utils',
-    version='0.1.0',
+    version='0.1.1',
     description='Useful web and file utilities in Python',
     long_description_content_type="text/markdown",
     long_description=README + '\n\n' + HISTORY,
@@ -31,10 +31,5 @@ setup_args = dict(
     url='https://github.com/Shriya99/web_and_file_utils',
 )
 
-install_requires = [
-    'os',
-    'smtplib'
-]
-
 if __name__ == '__main__':
-    setup(**setup_args, install_requires=install_requires)
+    setup(**setup_args)
