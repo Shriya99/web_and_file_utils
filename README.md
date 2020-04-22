@@ -17,10 +17,12 @@ Modules present in the package are : `getstat`, `mailstat`, `getdictstat` and `f
 #### Methods Description:
 * `urlstat_with_dirpath(directory_path)`
 This method takes path of directories having .url files (Internet Shortcut files) as argument and creates a `res.txt` file containing the up/down status list of all the websites in the working directory.
+
  *Note: While entering path prefix a 'r'. For eg. r'C:\Users\yourname\dirname' should be given as argument*
  
  * `urlstat_with_file(filepath)
  This method takes path of the file containing the list of URLs to be checked as argument. It creates a `res.txt` file containing the up/down status list of all the websites in the working directory.(Protocol should be present in the URLs in the file i.e. http, https etc should be mentioned)
+ 
 *Note: While entering path prefix a 'r'. For eg. r'C:\Users\yourname\dirname' should be given as argument*
 
 #### How to Call A Method : `getstat.urlstat_with_dirpath(directory_path)`
@@ -39,6 +41,7 @@ This method takes path of directories having .url files (Internet Shortcut files
  
  * `urlstatmail_with_file(filepath,fromadd,toadd,pswd,smtphost)
  This method takes path of the file containing the list of URLs to be checked,sender's mail id, recipient's mail id,sender's mail password and smtp server address as arguments. It automatically mails a `res.txt` file containing the up/down status list of all the websites in the working directory.(Protocol should be present in the URLs in the file i.e. http, https etc should be mentioned)
+
 *Note: While entering path prefix a 'r'. For eg. r'C:\Users\yourname\dirname' should be given as argument*
 
 ***Disclaimer : In order to use this method with automatic mail function using your mail id,your id and password needs to be provided as arguments and you need to enable access to less-secure apps from your mail id.It uses the smtplib module. Make sure to use this method for personal use only and compulsorily delete all arguments containing data before sharing the script with anyone.In case of any privacy breach,creator of this package will not be responsible whatsoever.***
@@ -52,10 +55,12 @@ This method takes path of directories having .url files (Internet Shortcut files
 #### Methods Description:
 * `urldictstat_with_dirpath(directory_path)`
 This method takes path of directories having .url files (Internet Shortcut files) as argument and returns a dictionary containing the up/down status list of all the websites in the working directory , with website names as key and status as it's value.
+ 
  *Note: While entering path prefix a 'r'. For eg. r'C:\Users\yourname\dirname' should be given as argument*
  
  * `urldictstat_with_file(filepath)`
  This method takes path of the file containing the list of URLs to be checked as argument and returns a dictionary containing the up/down status list of all the websites in the working directory , with website names as key and status as it's value.(Protocol should be present in the URLs in the file i.e. http, https etc should be mentioned)
+ 
 *Note: While entering path prefix a 'r'. For eg. r'C:\Users\yourname\dirname' should be given as argument*
 
 #### How to Call A Method : `getdictstat.urldictstat_with_dirpath(directory_path)`
@@ -71,6 +76,7 @@ This is particularly useful for developers to gather all required file paths in 
  * `mail_files_list(path,ext,fromadd,toadd,pswd,smtphost)`
  This method takes a list of paths we want to get our files from,the extension of those files,sender's mail id, recipient's mail id,sender's mail password and smtp server address as arguments.It automatically mails a `filelist.txt` file containing the paths of all the files with the given extension from all the given paths.
 This is particularly useful for developers to gather all required file paths in one place using single script for further use.
+
  *Note: While entering path prefix a 'r'. For eg. r'C:\Users\yourname\dirname' should be given as argument*
  
  ***Disclaimer : In order to use this method with automatic mail function using your mail id,your id and password needs to be provided as arguments and you need to enable access to less-secure apps from your mail id.It uses the smtplib module. Make sure to use this method for personal use only and compulsorily delete all arguments containing data before sharing the script with anyone.In case of any privacy breach,creator of this package will not be responsible whatsoever.***
