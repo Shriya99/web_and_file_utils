@@ -82,6 +82,3 @@ This is particularly useful for developers to gather all required file paths in 
  ***Disclaimer : In order to use this method with automatic mail function using your mail id,your id and password needs to be provided as arguments and you need to enable access to less-secure apps from your mail id.It uses the smtplib module. Make sure to use this method for personal use only and compulsorily delete all arguments containing data before sharing the script with anyone.In case of any privacy breach,creator of this package will not be responsible whatsoever.***
 
 ***Use the `get_files_list(fpath,ext)` method if you don't want the automatic mailing functionality***
-
-
-
